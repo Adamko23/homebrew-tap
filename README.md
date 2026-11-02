@@ -29,6 +29,12 @@ repository. A manual DMG and ZIP are available from
 
 ## Update
 
+Starting with 0.1.1, Brew Store includes signed Sparkle updates. It checks on
+launch and daily while running, downloads updates in the background, and installs
+on quit when authorization is not needed. The native menu also offers
+**Check for App Updates…**. Apple notarization remains separate from these update
+signatures. You can also update the cask manually:
+
 ```sh
 brew update
 brew upgrade --cask adamko23/tap/brew-store

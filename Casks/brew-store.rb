@@ -1,12 +1,13 @@
 cask "brew-store" do
-  version "0.1.0"
-  sha256 "6515f39d061a4ca2ddc2fe5ca825b55393de78460ea4085796f2458f645d2707"
+  version "0.1.1"
+  sha256 "1b125d9e04aafa0c96879701bfe57c1d8c66e223b13ef91343fd1ea42f14d3ae"
 
   url "https://github.com/Adamko23/brew-store/releases/download/v#{version}/Brew-Store-#{version}-macos-arm64.dmg"
   name "Brew Store"
   desc "Native macOS manager for Homebrew packages"
   homepage "https://github.com/Adamko23/brew-store"
 
+  auto_updates true
   depends_on arch: :arm64
   depends_on macos: :ventura
 
