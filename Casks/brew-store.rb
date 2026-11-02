@@ -8,7 +8,7 @@ cask "brew-store" do
   homepage "https://github.com/Adamko23/brew-store"
 
   depends_on arch: :arm64
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "Brew Store.app"
 
